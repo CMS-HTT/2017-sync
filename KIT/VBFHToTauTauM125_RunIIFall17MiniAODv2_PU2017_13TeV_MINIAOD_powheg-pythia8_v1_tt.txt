@@ -1,0 +1,30 @@
+newest: /afs/cern.ch/user/a/aakhmets/public/30-05-2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_tt.root
+
+tree name: "ntuple"
+
+dataset (MiniAOD): /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM 
+CMSSW release used for skimming: CMSSW_9_4_8
+GT used for skimming: 94X_mc2017_realistic_v15
+
+
+Trigger flag naming:
+
+    trg_singlemuon: HLT_IsoMu27_v
+    trg_singleelectron: HLT_Ele35_WPTight_Gsf_v
+    trg_doubletau: HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg_v 
+    trg_muonelectron_lowptmu: HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v
+    trg_muonelectron_lowpte: HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v
+
+6 June 2018:
+
+    Status: upload after some sync rounds with Vienna
+
+    Information on selection: https://cernbox.cern.ch/index.php/s/it7n9QYsr1skhVm (slides 16-20)  and https://twiki.cern.ch/twiki/bin/view/CMS/HiggsToTauTauWorking2017#Synchronisation_Ntuple
+
+    Difference to this selection:
+
+    - No METFilters
+    - No trigger object matching before pair selection, applied into the trigger flags afterwards. Further trigger dependent kin. cuts also in trigger flags
+    - Tau Fall1v1 byIso ID is used (so the Summer17 training), before pair selection, VVLoose WP is applied on taus
+    - Kinematic Cuts as stated on Twiki
+    - B-tagging: DeepCSV, 2017 WP's 2017_V2 SF's, but MSSM 2016 b-tagging efficiencies
