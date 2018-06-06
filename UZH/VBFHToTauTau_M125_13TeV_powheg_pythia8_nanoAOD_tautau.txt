@@ -1,0 +1,16 @@
+newest: 
+/afs/cern.ch/user/y/ytakahas/public/forHTT_2017/tautau.root
+
+(please use "tree" inside the File)
+
+dataset used (nanoAOD)
+/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17NanoAOD-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/NANOAODSIM
+
+
+6 June 2018 :
+- First trial
+- no trigger matching applied
+- trg_doubletau variable consider the OR of 
+---- HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg
+---- HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg
+---- HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg

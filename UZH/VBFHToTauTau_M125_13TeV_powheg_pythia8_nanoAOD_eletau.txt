@@ -1,0 +1,13 @@
+newest: 
+/afs/cern.ch/user/y/ytakahas/public/forHTT_2017/eletau.root
+
+(please use "tree" inside the File)
+
+dataset used (nanoAOD)
+/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17NanoAOD-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/NANOAODSIM
+
+
+6 June 2018 :
+- First trial
+- no trigger matching applied
+- trg_singleelectron variable only consider HLT_Ele35_WPTight_Gsf
