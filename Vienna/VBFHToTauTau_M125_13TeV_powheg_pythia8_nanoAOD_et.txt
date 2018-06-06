@@ -1,0 +1,10 @@
+/afs/cern.ch/user/m/mspanrin/public/2017-sync/June/VBFHToTauTau_M125_powheg_et_0606.root
+
+dataset used (nanoAOD)
+/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17NanoAOD-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/NANOAODSIM
+
+20180606: 
+First try
+No trigger matching applied
+Old recoil corrections applied: TypeI-PFMet_Run2016BtoH.root
+VVLooseMVAold(2017v1) WP is applied
