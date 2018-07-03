@@ -1,0 +1,1 @@
+/afs/cern.ch/user/a/adow/public/sync_ntuples/2018/SYNCFILE_VBFHToTauTau_M-125_2017_tt_0.root
