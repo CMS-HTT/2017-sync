@@ -1,4 +1,4 @@
-/afs/cern.ch/user/a/aakhmets/public/30-05-2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_mt.root
+/afs/desy.de/user/a/aakhmets/public/2017-sync/03_07_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_mt.root
 
 tree name: "ntuple"
 
@@ -28,3 +28,16 @@ Trigger flag naming:
     - Tau Fall1v1 byIso ID is used (so the Summer17 training), before pair selection, VVLoose WP is applied on taus
     - Kinematic Cuts as stated on Twiki
     - B-tagging: DeepCSV, 2017 WP's 2017_V2 SF's, but MSSM 2016 b-tagging efficiencies
+
+3 July 2018:
+
+    Status: update of selection
+
+    Difference to previous upload:
+
+    - taus: MVA Fall17v2 byIso ID's used
+    - electrons: switched from delta beta corrected to rho-corrected isolation
+    - kinematics em: pt(e) > 13, pt(mu) > 13
+    - kinematics et: pt(e) > 25, pt(tau) > 20
+    - kinematics mt: pt(mu) > 21, pt(tau) > 20
+    - kinematics tt: pt(tau1) > 40, pt(tau2) > 40
