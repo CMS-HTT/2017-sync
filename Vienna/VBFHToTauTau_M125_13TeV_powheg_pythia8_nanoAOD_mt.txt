@@ -1,8 +1,9 @@
-/afs/cern.ch/user/m/mspanrin/public/2017-sync/June/VBFHToTauTau_M125_powheg_mt_0612.root
+/afs/cern.ch/user/m/mspanrin/public/2017-sync/July/VBFHToTauTau_M125_powheg_mt_0704.root
 
 dataset used (nanoAOD)
 /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17NanoAOD-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/NANOAODSIM
 
 20180612:
+mu pt > 21
 No trigger matching applied
 VVLooseMVAold(2017v2) WP is applied
