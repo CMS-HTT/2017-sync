@@ -1,4 +1,4 @@
-/afs/desy.de/user/a/aakhmets/public/2017-sync/03_07_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_mt.root
+/afs/desy.de/user/a/aakhmets/public/2017-sync/07_07_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_mt.root
 
 tree name: "ntuple"
 
@@ -41,3 +41,11 @@ Trigger flag naming:
     - kinematics et: pt(e) > 25, pt(tau) > 20
     - kinematics mt: pt(mu) > 21, pt(tau) > 20
     - kinematics tt: pt(tau1) > 40, pt(tau2) > 40
+
+7 July 2018:
+
+    Status: update of electron selection:
+
+    Difference to previous upload:
+
+    - electrons: switched to "elec->gsfTrack()->hitPattern().numberOfLostHits(reco::HitPattern::MISSING_INNER_HITS)" prescription for expected number of missing inner hits
