@@ -1,4 +1,4 @@
-/afs/desy.de/user/a/aakhmets/public/2017-sync/07_07_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_em.root
+/afs/desy.de/user/a/aakhmets/public/2017-sync/10_07_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_em.root
 
 tree name: "ntuple"
 
@@ -48,3 +48,11 @@ Trigger flag naming:
     Difference to previous upload:
 
     - electrons: switched to "elec->gsfTrack()->hitPattern().numberOfLostHits(reco::HitPattern::MISSING_INNER_HITS)" prescription for expected number of missing inner hits
+
+10 July 2018:
+
+    Status: update of electron selection:
+
+    Difference to previous upload:
+
+    - generator matching: switched to algorithm used by Wisconsin to be more consistent. See implementation at https://github.com/KIT-CMS/Artus/blob/dictchanges/KappaAnalysis/src/Utility/GeneratorInfo.cc#L77-L165
