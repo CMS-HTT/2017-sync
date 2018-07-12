@@ -1,0 +1,4 @@
+/afs/cern.ch/user/d/doyeong/public/2017SyncNtuples/July12/VBFHToTauTau_M125_13TeV_powheg_pythia8_tt.root
+
+tree name : tt_tree
+dataset (MiniAOD): /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM 
