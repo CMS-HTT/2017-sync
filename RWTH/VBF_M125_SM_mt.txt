@@ -1,0 +1,1 @@
+/afs/cern.ch/user/j/jdegens/public/sync_ntuples/2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_mt.root
