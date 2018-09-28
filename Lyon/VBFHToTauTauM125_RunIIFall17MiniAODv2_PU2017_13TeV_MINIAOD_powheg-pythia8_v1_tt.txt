@@ -1,0 +1,13 @@
+/afs/cern.ch/user/g/gtouquet/public/2017sync/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_tt.root
+
+tree name: "events"
+
+dataset (MiniAOD): /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM 
+CMSSW release used for skimming: CMSSW_9_4_8
+
+28 September 2018:
+
+  Status: Initial commit
+
+  Following doc on : https://gitlab.cern.ch/cms-htt/sync/tree/master/doc
+  except : B-tagging: DeepCSV, 2017 WP's 2017_V2 SF's, but MSSM 2016 b-tagging efficiencies
