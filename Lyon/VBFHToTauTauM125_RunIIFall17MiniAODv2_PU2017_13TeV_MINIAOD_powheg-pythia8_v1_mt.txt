@@ -1,0 +1,13 @@
+/afs/cern.ch/user/l/ltortero/public/MSSMSync18/SYNCFILE_VBFHToTauTau_M-125_mt_v181009.root
+
+tree name: "events"
+
+dataset (MiniAOD): /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM 
+CMSSW release used for skimming: CMSSW_9_4_8
+
+
+10 October 2018:
+
+  Status: Initial commit
+
+  Following doc on : https://gitlab.cern.ch/cms-htt/sync/tree/master/doc
