@@ -1,3 +1,18 @@
+10.10.2017:
+
+/afs/desy.de/user/m/mameyer/public/2017-sync/VBFHToTauTau_M125_v2.root
+
+updates w.r.t v1:
+
+- electrons switched to "elec->gsfTrack()->hitPattern().numberOfLostHits(reco::HitPattern::MISSING_INNER_HITS)"
+- GT: 94X_mc2017_realistic_v15
+
+- electron scale and smearing corrections are applied
+
+- MET recipe v2 applied
+
+
+
 /afs/cern.ch/user/m/mmeyer/public/Synchronisation_2017/VBFHToTauTau_M125_v1.root
 
 missing / not updated yet:
@@ -11,3 +26,5 @@ missing / not updated yet:
 - electron scale and smearing corrections are not applied
 
 - id and iso SFs for the loose isolation cuts (iso_1 < 0.15, iso_2 < 0.2) are missing, at the moment the SF for the tighter isolation cuts are applied (iso_1 < 0.1, iso_2 < 0.15)
+
+
