@@ -1,19 +1,30 @@
-/afs/desy.de/user/a/aakhmets/public/2017-sync/10_07_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_et.root
+/afs/desy.de/user/a/aakhmets/public/2017-sync/15_10_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_et.root
 
 tree name: "ntuple"
 
 dataset (MiniAOD): /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM 
-CMSSW release used for skimming: CMSSW_9_4_8
-GT used for skimming: 94X_mc2017_realistic_v15
+CMSSW release used for skimming: CMSSW_9_4_11_cand1
+GT used for skimming: 94X_mc2017_realistic_v16
 
 
 Trigger flag naming:
 
-    trg_singlemuon: HLT_IsoMu27_v
-    trg_singleelectron: HLT_Ele35_WPTight_Gsf_v
-    trg_doubletau: HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg_v 
-    trg_muonelectron_lowptmu: HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v
-    trg_muonelectron_lowpte: HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v
+    trg_singlemuon_24: HLT_IsoMu24_v
+    trg_singlemuon_27: HLT_IsoMu27_v
+    trg_crossmuon_mu20tau27: HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1_v
+    trg_singleelectron_27: HLT_Ele27_WPTight_Gsf_v
+    trg_singleelectron_32: HLT_Ele32_WPTight_Gsf_v
+    trg_singleelectron_32_fallback: HLT_Ele32_WPTight_Gsf_DoubleL1EG_v
+    trg_singleelectron_35: HLT_Ele35_WPTight_Gsf_v
+    trg_crossele_ele24tau30: HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1_v
+    trg_doubletau_35_tightiso_tightid: HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg_v
+    trg_doubletau_40_mediso_tightid: HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg_v
+    trg_doubletau_40_tightiso: HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg_v
+    trg_singletau_leading: HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1_v
+    trg_singletau_trailing: HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1_v
+    trg_muonelectron_mu12ele23: HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v
+    trg_muonelectron_mu23ele12: HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v
+    trg_muonelectron_mu8ele23: HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v
 
 6 June 2018:
 
@@ -57,3 +68,26 @@ Trigger flag naming:
     Difference to previous upload:
 
     - generator matching: switched to algorithm used by Wisconsin to be more consistent. See implementation at https://github.com/KIT-CMS/Artus/blob/dictchanges/KappaAnalysis/src/Utility/GeneratorInfo.cc#L77-L165
+
+15 October 2018:
+
+    Status: update to recent recommendations
+
+    Difference to previous upload:
+
+    - MET: switched to latest recipe (v2) in order to mitigate EE noise: https://twiki.cern.ch/twiki/bin/view/CMS/MissingETUncertaintyPrescription#Instructions_for_9_4_X_X_9_for_2
+    - Jets: reapply JEC from 94X_mc2017_realistic_v16 global tag
+    - Electrons:
+        * switch to V2 ID's for cut-based & MVA-based types
+        * use for MVA-based noIso versions
+        * for signal electrons, MVA wp90 (like for extra lepton veto)
+        * 94X effective areas used (consistent with V2)
+        * reference: https://twiki.cern.ch/twiki/bin/view/CMS/MultivariateElectronIdentificationRun2#Recommended_MVA_Recipe_V2_for_re
+    - B-jets: using still DeepCSV, but with new b-tagging efficiencies.
+
+    To be updated in the next iteration:
+
+    - MET: recoil corrections to be applied
+    - Taus:
+        * energy scale correction to be applied & propagated for signal pair to MET
+        * e -> tau fake energy scale correction to be applied propagated for signal pair to MET
