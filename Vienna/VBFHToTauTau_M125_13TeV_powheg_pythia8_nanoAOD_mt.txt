@@ -1,9 +1,61 @@
-/afs/cern.ch/user/m/mspanrin/public/2017-sync/July/VBFHToTauTau_M125_powheg_mt_0704.root
+/afs/hephy.at/user/j/jandrejkovic/public/2017-sync/21_11_2018/VBFHToTauTau_M125_13TeV_powheg_pythia8_PU2017_12Apr2018_94X_mc2017_realistic_v14_v1_mt.root
 
 dataset used (nanoAOD)
 /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17NanoAOD-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/NANOAODSIM
+
+Trigger flag naming:
+
+    trg_singlemuon_24: HLT_IsoMu24_v
+    trg_singlemuon_27: HLT_IsoMu27_v
+    trg_crossmuon_mu20tau27: HLT_IsoMu20_eta2p1_LooseChargedIsoPFTau27_eta2p1_CrossL1_v
+    trg_singleelectron_27: HLT_Ele27_WPTight_Gsf_v
+    trg_singleelectron_32: HLT_Ele32_WPTight_Gsf_v
+    trg_singleelectron_32_fallback: HLT_Ele32_WPTight_Gsf_DoubleL1EG_v
+    trg_singleelectron_35: HLT_Ele35_WPTight_Gsf_v
+    trg_crossele_ele24tau30: HLT_Ele24_eta2p1_WPTight_Gsf_LooseChargedIsoPFTau30_eta2p1_CrossL1_v
+    trg_doubletau_35_tightiso_tightid: HLT_DoubleTightChargedIsoPFTau35_Trk1_TightID_eta2p1_Reg_v
+    trg_doubletau_40_mediso_tightid: HLT_DoubleMediumChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg_v
+    trg_doubletau_40_tightiso: HLT_DoubleTightChargedIsoPFTau40_Trk1_eta2p1_Reg_v
+    trg_singletau_leading: HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1_v
+    trg_singletau_trailing: HLT_MediumChargedIsoPFTau180HighPtRelaxedIso_Trk50_eta2p1_v
+    trg_muonelectron_mu12ele23: HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v
+    trg_muonelectron_mu23ele12: HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v
+    trg_muonelectron_mu8ele23: HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v
 
 20180612:
 mu pt > 21
 No trigger matching applied
 VVLooseMVAold(2017v2) WP is applied
+
+21 november 2018:
+Difference to previous upload:
+
+	- No METFilters
+    - No trigger object matching before pair selection, applied into the trigger flags afterwards. Further trigger dependent kin. cuts also in trigger flags
+
+    - taus: MVA Fall17v2 byIso ID's used
+    - electrons: rho-corrected isolation
+    - kinematics et: pt(e) > 25, pt(tau) > 23
+    - kinematics mt: pt(mu) > 21, pt(tau) > 23
+    - kinematics tt: pt(tau1) > 40, pt(tau2) > 40
+    
+
+    - MET: switched to latest recipe (v2) in order to mitigate EE noise: https://twiki.cern.ch/twiki/bin/view/CMS/MissingETUncertaintyPrescription#Instructions_for_9_4_X_X_9_for_2
+    - Jets: reapply JEC from 94X_mc2017_realistic_v15 global tag
+    - Electrons:
+        * switch to V2 ID's for cut-based & MVA-based types
+        * use for MVA-based noIso versions
+        * for signal electrons, MVA wp90 (like for extra lepton veto)
+        * 94X effective areas used (consistent with V2)
+        * reference: https://twiki.cern.ch/twiki/bin/view/CMS/MultivariateElectronIdentificationRun2#Recommended_MVA_Recipe_V2_for_re
+    - B-jets: using DeepCSV, with Olena's b-tagging efficiencies.
+
+    - MET: recoil corrections 
+    - Taus:
+    	*  Electron to Tau fake ES:
+    		^ oneProng0p0 = 0.003
+    		^ oneProng1p0 = 0.036
+    	* Tau ES:
+    		^ oneProng0p0 =   0.007
+		 	^ oneProng1p0 =  -0.002
+		 	^ threeProng0p0 = 0.001
