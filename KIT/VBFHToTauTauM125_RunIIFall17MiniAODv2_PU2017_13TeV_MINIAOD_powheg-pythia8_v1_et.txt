@@ -1,10 +1,10 @@
-/afs/desy.de/user/a/aakhmets/public/2017-sync/15_10_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_et.root
+/afs/desy.de/user/a/aakhmets/public/2017-sync/22_11_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_et.root
 
 tree name: "ntuple"
 
 dataset (MiniAOD): /VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM 
-CMSSW release used for skimming: CMSSW_9_4_11_cand1
-GT used for skimming: 94X_mc2017_realistic_v16
+CMSSW release used for skimming: CMSSW_9_4_11_cand2
+GT used for skimming: 94X_mc2017_realistic_v15
 
 
 Trigger flag naming:
