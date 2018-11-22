@@ -91,3 +91,28 @@ Trigger flag naming:
     - Taus:
         * energy scale correction to be applied & propagated for signal pair to MET
         * e -> tau fake energy scale correction to be applied propagated for signal pair to MET
+
+22 November 2018:
+
+    Status: update to be considered final for SM H->TauTau
+
+    Difference to previous upload:
+
+    - kinematics:
+        * em: pt(e) > 13, pt(mu) > 10
+        * et: pt(e) > 25, pt(tau) > 23
+        * mt: pt(mu) > 21, pt(tau) > 23
+        * tt: pt(tau1) > 40, pt(tau2) > 40
+
+    - MET:
+        * using recipe v2 with 94X_mc2017_realistic_v15 global tag
+        * MET recoils corrections are applied, where necessary (resonances)
+        * corrections on the signal pair are propagated to the MET (Tau ES & e->Tau fake ES corrections in mt, et, tt)
+    - Jets:
+        * reapply JEC from 94X_mc2017_realistic_v15 global tag
+        * remove noisy jets (with pt < 50 GeV && abs(eta) > 2.65 && abs(eta) < 3.)
+    - Taus:
+        * energy scale correction to be applied & propagated for signal pair to MET
+        * e -> tau fake energy scale correction to be applied propagated for signal pair to MET
+    
+    Details on selection & corrections to be found here: https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsToTauTauWorking2017#tautau%20checklist
