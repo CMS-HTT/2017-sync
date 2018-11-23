@@ -1,4 +1,4 @@
-/afs/desy.de/user/a/aakhmets/public/2017-sync/22_11_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_mt.root
+/afs/desy.de/user/a/aakhmets/public/2017-sync/23_11_2018/VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_v1_mt.root
 
 tree name: "ntuple"
 
