@@ -22,6 +22,7 @@ btagCut = 0.4941
 The following JEC were used:
 
 jetCorrections = ('AK4PFchs', cms.vstring(['L1FastJet', 'L2Relative', 'L3Absolute', 'L2L3Residual']), 'None')
+Gloabl tag: 102X_mc2017_realistic_v7
 
 TauSpinner weights are not stored yet.
 The trigger scale factors and tau id scale factors used are for mva17_v2 and not for deep tau.
