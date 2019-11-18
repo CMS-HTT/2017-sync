@@ -1,1 +1,7 @@
-/afs/cern.ch/user/a/adow/public/sync_ntuples/2018/SYNCFILE_VBFHToTauTau_M-125_2017_tt_0.root
+/afs/cern.ch/work/a/adow/public/Sync/2017/SYNCFILE_VBFHToTauTau_M-125_2017_tt.root
+
+2017 tt channel ntuple for sync purposes
+Includes standard sync variables + some additional CP in decay related variables (more to be included)
+CMSSW used for skimming: CMSSW_10_2_16
+GT for skimming: 102X_mc2017_realistic_v6
+Corresponds to JEC V32
