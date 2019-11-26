@@ -6,7 +6,7 @@ PATH:
 
 UPDATES wrt v1:
 
-TauSpinner weight added (branches: sm_htt125 (even) ,ps_htt125 (odd))
+TauSpinner weight added (branches: tauspinnerH (even) ,tauspinnerA (odd) ,tauspinnerMaxMix (mixing angle = -pi/4)
 
 
 -------------------------------------------
