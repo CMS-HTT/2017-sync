@@ -2,6 +2,16 @@
 
 PATH:
 
+/afs/cern.ch/user/d/dvats/public/for_sync/VBFHToTauTau_M125_13TeV_powheg_pythia8_v2.root
+
+UPDATES wrt v1:
+
+TauSpinner weight added (branches: sm_htt125 (even) ,ps_htt125 (odd))
+
+
+-------------------------------------------
+PATH:
+
 /afs/cern.ch/user/d/dvats/public/for_sync/VBFHToTauTau_M125_13TeV_powheg_pythia8_v1.root
 
 
