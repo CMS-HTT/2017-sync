@@ -1,7 +1,7 @@
-/afs/cern.ch/user/m/mbluj/public/SyncCPHinTauDecays/2017/Sync_VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_mt.root
+/afs/cern.ch/user/m/mbluj/public/SyncCPHinTauDecays/2017/Sync_VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_tt.root
 
 Sync ntuple for the CP-H-in-tau-decays analysis; 
-the mt channel; v1
+the tt channel; v1
 
 CMSSW used for skimming: CMSSW_10_2_17
 GT for skimming: 102X_mc2017_realistic_v7 (JEC V32)
