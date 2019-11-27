@@ -1,0 +1,29 @@
+
+=========
+   v1
+=========
+
+* Year: 2017
+
+* Base sample:
+/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_new_pmx_94X_mc2017_realistic_v14-v1/MINIAODSIM
+
+* GlobalTag
+102X_mc2017_realistic_v7
+
+* Path to Synchronisation Ntuples: 
+/afs/cern.ch/user/o/ofilatov/public/CP_Synch_2017/VBF_HToTauTau_M125_CP_mt_v1.root
+
+* Selection criteria and cuts follow the ones from https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsCPinTauDecaysSync
+* Corrections are taken from IC workspace (https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiggsCPinTauDecays#Corrections)   
+* Comments:
+  - JEC correspond to the GlobalTag
+  - BTagAlgorithm: DeepCSV, Medium WP with promote-demote SF corrections applied
+  - PUPPI MET recoil corrections are not yet applied (while PFMET is Type I + recoil corrected)
+  - SVFit and FastMTT variables are calculated with PFMET
+  - lep->tau fakes and TES are currently taken for an old MVA since official TAU POG recommendations are not available for DeepTau
+  - Tau Xtrigger: hltSelectedPFTau27LooseChargedIsolationAgainstMuonL1HLTMatched is missing, hltPFTau27TrackLooseChargedIsoAgainstMuon used instead
+  - TauSpinner weights: different naming, stored in GenTauCheck tree
+      gen_sm_htt125 = tauspinnerH
+      gen_ps_htt125 = tauspinnerA
+      gen_mm_htt125 = tauspinnerMaxMix
