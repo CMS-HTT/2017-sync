@@ -1,9 +1,14 @@
 /afs/cern.ch/user/m/mbluj/public/SyncCPHinTauDecays/2017/Sync_VBFHToTauTauM125_RunIIFall17MiniAODv2_PU2017_13TeV_MINIAOD_powheg-pythia8_tt.root
 
 Sync ntuple for the CP-H-in-tau-decays analysis; 
-the tt channel; v1
+the tt channel; v2
 
 CMSSW used for skimming: CMSSW_10_2_17
 GT for skimming: 102X_mc2017_realistic_v7 (JEC V32)
 
 type-1 pfMET used for SVFit, mT, etc.
+
+Updates:
+1.12.2019
+* DeepTau vsE VVVLoose & vsMu VLoose applied during pair selection rather than after it is selcted
+* Small fixes in kinematics, e.g. eta ranges of b-jets
