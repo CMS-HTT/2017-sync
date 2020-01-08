@@ -28,3 +28,5 @@ https://github.com/cms-tau-pog/TauIDSFs
 
 Weights:
 weight=trigweight*idisoweight*puweight
+
+No TauSpinner variables
