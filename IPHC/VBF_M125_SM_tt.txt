@@ -1,0 +1,32 @@
+/afs/cern.ch/user/g/gbourgat/public/HTauTauSynch/VBFHToTauTau_M125_13TeV_powheg_pythia8.root
+
+2017 tt channel sync ntuple for the CP measurement in HTauTau decays
+
+CMSSW used for skimming: CMSSW_10_2_16
+GT for skimming: 102X_mc2017_realistic_v7 (JEC V32)
+jetCorrections = ('AK4PFchs', cms.vstring(['L1FastJet', 'L2Relative', 'L3Absolute', 'L2L3Residual']), 'None')
+
+b-tag selections:
+pfDeepCSVJetTags:probb + pfDeepCSVJetTags:probbb > 0.4941
+
+trg_doubletau:
+HLT_DoubleMedium_ChargedIsoPFTau40_Trk1_TightID_eta2p1_Reg_v* || HLT_DoubleTight_ChargedIsoPFTau40_Trk1_eta2p1_Reg_v* || HLT_DoubleTight_ChargedIsoPF_Tau35_Trk1_TightID_eta2p1_Reg_v*
++ L1 pT tightened to 32 GeV
++ trigger path matching with HLT objects within ΔR < 0.5
+
+Tau Energy Scale (DeepTau version):
+DM==0 -0.7%
+DM==1 -1.1%
+DM==10 +0.5%
+DM==11 +1.7%
+
+trigweight (DeepTau version with Medium WP):
+https://github.com/cms-tau-pog/TauTriggerSFs/tree/run2_SFs
+
+idisoweight (DeepTau version with Medium WP):
+https://github.com/cms-tau-pog/TauIDSFs
+
+Weights:
+weight=trigweight*idisoweight*puweight
+
+No TauSpinner variables
