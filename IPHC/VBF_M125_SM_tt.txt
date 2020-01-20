@@ -1,3 +1,13 @@
+/afs/cern.ch/user/g/gbourgat/public/HTauTauSynch/VBFHToTauTau_M125_13TeV_powheg_pythia8_v2.root
+
+UPDATES:
+
+pt_tt and m_sv fixed
+MET collection with fixEE2017 applied
+Jets veto: rawpt<50.0 && 2.65<Eta<3.139
+
+-------------------------------------------------
+
 /afs/cern.ch/user/g/gbourgat/public/HTauTauSynch/VBFHToTauTau_M125_13TeV_powheg_pythia8.root
 
 2017 tt channel sync ntuple for the CP measurement in HTauTau decays
