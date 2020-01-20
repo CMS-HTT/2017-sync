@@ -1,3 +1,7 @@
+2018/11/30
+/afs/cern.ch/user/d/doyeong/public/2017SyncNtuples/Nov30/VBFHtoTauTau125.root
+
+--------------------------------------------- Legacy ---------------------------------------------
 /afs/cern.ch/user/d/doyeong/public/2017SyncNtuples/July12/VBFHToTauTau_M125_13TeV_powheg_pythia8_tt.root
 
 tree name : tt_tree
