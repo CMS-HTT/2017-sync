@@ -1,6 +1,16 @@
 /////FOR THE PURPOSE OF CP MEASUREMENT/////
 
-PATH:
+PATH(v3):
+
+/afs/cern.ch/user/d/dvats/public/for_sync/VBFHToTauTau_M125_13TeV_powheg_pythia8_v3.root
+
+UPDATES w.r.t v2:
+
+Applied tes corrections, l1 trigger condition and stored id and trigger weights.
+
+
+--------------------------------------------
+PATH(v2):
 
 /afs/cern.ch/user/d/dvats/public/for_sync/VBFHToTauTau_M125_13TeV_powheg_pythia8_v2.root
 
@@ -10,7 +20,7 @@ TauSpinner weight added (branches: tauspinnerH (even) ,tauspinnerA (odd) ,tauspi
 
 
 -------------------------------------------
-PATH:
+PATH(v1):
 
 /afs/cern.ch/user/d/dvats/public/for_sync/VBFHToTauTau_M125_13TeV_powheg_pythia8_v1.root
 
