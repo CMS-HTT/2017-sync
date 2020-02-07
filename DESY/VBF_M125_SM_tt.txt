@@ -1,5 +1,14 @@
 /////FOR THE PURPOSE OF CP MEASUREMENT/////
 
+PATH(v4):
+
+/afs/cern.ch/user/d/dvats/public/for_sync/VBFHToTauTau_M125_13TeV_powheg_pythia8_v4.root
+
+UPDATES w.r.t v3
+
+Bug fix. Applying kit recoil corrections
+
+-----------------------------------------------
 PATH(v3):
 
 /afs/cern.ch/user/d/dvats/public/for_sync/VBFHToTauTau_M125_13TeV_powheg_pythia8_v3.root
